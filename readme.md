@@ -35,3 +35,7 @@ PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 INSERT INTO `User`(`name`,`status`,`created`) VALUES ("x","st",NOW());
+
+小贴士：
+你可以通过 SHOW VARIABLES LIKE 'character%' 查看字符集是否更改为utf8mb4,
+也可以通过SHOW VARIABLES LIKE '%time_zone%' 查看时区是否是东八区
